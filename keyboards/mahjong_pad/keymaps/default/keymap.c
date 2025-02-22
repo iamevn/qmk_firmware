@@ -1,0 +1,24 @@
+#include QMK_KEYBOARD_H
+
+enum {
+  LAYER_MAME,
+  LAYER_GAMEPAD
+};
+
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+  [LAYER_MAME] = LAYOUT(
+      KC_A, KC_B, KC_C, KC_D, KC_E, KC_F, KC_G,
+      KC_H, KC_I, KC_J, KC_K, KC_L, KC_M, KC_N,
+      KC_1, KC_5, KC_3, KC_RCTL, KC_ENT, KC_RSFT, KC_BSPC,
+      KC_Y, KC_RALT, KC_LCTL, KC_LALT, KC_SPC, KC_LSFT, KC_Z),
+  [LAYER_GAMEPAD] = LAYOUT(
+      JS_0, JS_1, JS_2, JS_3, JS_4, JS_5, JS_6,
+      JS_7, JS_8, JS_9, JS_10, JS_11, JS_12, JS_13,
+      JS_14, JS_15, JS_16, JS_17, JS_18, JS_19, JS_20,
+      JS_21, JS_22, JS_23, JS_24, JS_25, JS_26, JS_27)
+};
+
+const uint16_t PROGMEM dip_switch_map[NUM_DIP_SWITCHES][NUM_DIP_STATES] = {
+    DIP_SWITCH_OFF_ON(DF(LAYER_GAMEPAD), DF(LAYER_MAME))
+};
+

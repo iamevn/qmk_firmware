@@ -1,0 +1,68 @@
+{
+    "manufacturer": "iamevn",
+    "keyboard_name": "mahjong_pad",
+    "maintainer": "iamevn",
+    "bootloader": "rp2040",
+    "diode_direction": "ROW2COL",
+    "dip_switch": {
+      "enabled": true,
+      "pins": ["GP22"]
+    },
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": false,
+        "joystick": true,
+        "mousekey": false,
+        "dip_switch": true,
+        "nkro": true
+    },
+    "joystick": {
+      "button_count": 28
+    },
+    "matrix_pins": {
+        "cols": ["GP0", "GP1", "GP2", "GP3", "GP4", "GP5", "GP6", "GP7", "GP8", "GP9", "GP10", "GP11", "GP12", "GP13"],
+        "rows": ["GP15", "GP14"]
+    },
+    "processor": "RP2040",
+    "usb": {
+        "device_version": "0.0.1",
+        "pid": "0x4D4A",
+        "vid": "0xEB4E"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label": "A", "matrix": [0, 13], "x": 0, "y": 0},
+                {"label": "B", "matrix": [0, 12], "x": 1, "y": 0},
+                {"label": "C", "matrix": [0, 11], "x": 2, "y": 0},
+                {"label": "D", "matrix": [0, 10], "x": 3, "y": 0},
+                {"label": "E", "matrix": [0, 9], "x": 4, "y": 0},
+                {"label": "F", "matrix": [0, 8], "x": 5, "y": 0},
+                {"label": "G", "matrix": [0, 7], "x": 6, "y": 0},
+                {"label": "H", "matrix": [0, 6], "x": 7, "y": 0},
+                {"label": "I", "matrix": [0, 5], "x": 8, "y": 0},
+                {"label": "J", "matrix": [0, 4], "x": 9, "y": 0},
+                {"label": "K", "matrix": [0, 3], "x": 10, "y": 0},
+                {"label": "L", "matrix": [0, 2], "x": 11, "y": 0},
+                {"label": "M", "matrix": [0, 1], "x": 12, "y": 0},
+                {"label": "N", "matrix": [0, 0], "x": 13.25, "y": 0, "w": 1.5},
+                {"label": "start", "matrix": [1, 13], "x": 0, "y": 2},
+                {"label": "coin", "matrix": [1, 12], "x": 1, "y": 2},
+                {"label": "bet", "matrix": [1, 11], "x": 2, "y": 2},
+                {"label": "take score", "matrix": [1, 10], "x": 3.25, "y": 2},
+                {"label": "big", "matrix": [1, 9], "x": 4.25, "y": 2},
+                {"label": "double up", "matrix": [1, 8], "x": 5.25, "y": 2},
+                {"label": "small", "matrix": [1, 7], "x": 6.25, "y": 2},
+                {"label": "flip flip", "matrix": [1, 6], "x": 7.5, "y": 2},
+                {"label": "last chance", "matrix": [1, 5], "x": 8.5, "y": 2},
+                {"label": "kan", "matrix": [1, 4], "x": 9.75, "y": 2},
+                {"label": "pon", "matrix": [1, 3], "x": 10.75, "y": 2},
+                {"label": "chi", "matrix": [1, 2], "x": 11.75, "y": 2},
+                {"label": "riichi", "matrix": [1, 1], "x": 12.75, "y": 2},
+                {"label": "ron", "matrix": [1, 0], "x": 13.75, "y": 2}
+            ]
+        }
+    }
+}
